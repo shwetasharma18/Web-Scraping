@@ -1,4 +1,5 @@
 import requests
+from pprint import pprint
 from bs4 import BeautifulSoup
 URL = "https://www.imdb.com/india/top-rated-indian-movies/"
 sample  = requests.get(URL)
@@ -23,4 +24,4 @@ def scrape_top_list(table_rows):
 		movies_list.append(dic)
 	return(movies_list)
 
-print(scrape_top_list(table_rows))
+pprint(scrape_top_list(table_rows))
