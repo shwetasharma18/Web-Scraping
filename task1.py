@@ -1,5 +1,4 @@
 import requests
-from pprint import pprint
 from bs4 import BeautifulSoup
 URL = "https://www.imdb.com/india/top-rated-indian-movies/"
 sample  = requests.get(URL)
