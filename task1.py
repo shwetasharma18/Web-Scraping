@@ -24,4 +24,5 @@ def scrape_top_list(table_rows):
 		movies_list.append(dic)
 	return(movies_list)
 
-pprint(scrape_top_list(table_rows))
+movies = scrape_top_list(table_rows)
+pprint(movies)
